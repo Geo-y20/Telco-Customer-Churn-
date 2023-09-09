@@ -2,7 +2,6 @@
 <html>
 <head>
     <meta charset="UTF-8">
-    <title>Telco Customer Churn Prediction</title>
 </head>
 <body>
 
