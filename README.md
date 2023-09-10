@@ -1,96 +1,82 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <meta charset="UTF-8">
-</head>
-<body>
+# Telco Customer Churn Prediction
 
-<h1>Telco Customer Churn Prediction</h1>
+## Introduction
 
-<h2>Introduction</h2>
+Welcome to the Telco Customer Churn Prediction project. This project is dedicated to predicting customer churn in the telecommunications industry, a vital task for businesses aiming to retain their customers and make data-driven decisions to reduce attrition rates.
 
-<p>Welcome to the Telco Customer Churn Prediction project. This project focuses on predicting customer churn in the telecommunications industry. Churn prediction is a critical task for businesses to retain their customers and make data-driven decisions to reduce attrition rates.</p>
+## Dataset
 
-<h2>Dataset</h2>
+The dataset used in this project can be found [here](https://www.kaggle.com/datasets/blastchar/telco-customer-churn). It contains information about Telco customers, including demographics, service subscriptions, and customer churn status. The dataset consists of various features, encompassing both numerical and categorical variables.
 
-<p>The dataset used in this project is sourced from [Data Source Name/Link]. It contains information about Telco customers, including demographics, service subscriptions, and customer churn status. The dataset is structured with various features, including both numerical and categorical variables.</p>
+### Data Preprocessing
 
-<p>Preprocessing of the dataset involved several steps:
-    <ul>
-        <li>Handling Missing Values: Identified and addressed missing values, ensuring data integrity.</li>
-        <li>Encoding Categorical Variables: Categorical variables such as 'gender,' 'contract type,' and 'payment method' were encoded to numerical values for model compatibility.</li>
-        <li>Scaling Numerical Features: Numerical features were scaled to have a consistent range for improved model performance.</li>
-    </ul>
-</p>
+To prepare the data for analysis, we undertook the following steps:
 
-<h2>Exploratory Data Analysis</h2>
+- **Handling Missing Values**: Identified and addressed missing values to ensure data integrity.
+- **Encoding Categorical Variables**: Categorical variables such as 'gender,' 'contract type,' and 'payment method' were encoded into numerical values for model compatibility.
+- **Scaling Numerical Features**: Numerical features were scaled to maintain a consistent range, thereby improving model performance.
 
-<p>During the exploratory data analysis (EDA) phase, key insights were uncovered:
-    <ul>
-        <li>Summary Statistics: Basic statistics such as mean, median, and standard deviation were calculated for numerical variables.</li>
-        <li>Data Visualizations: Visualizations like histograms, box plots, and correlation matrices were created to better understand the data distribution and relationships.</li>
-        <li>Churn Analysis: Churn rates were analyzed with respect to different customer attributes to identify potential patterns and trends.</li>
-    </ul>
-</p>
+## Exploratory Data Analysis (EDA)
 
-<h2>Model Building</h2>
+During the exploratory data analysis (EDA) phase, we uncovered key insights, including:
 
-<p>Several machine learning models were employed for churn prediction, including:
-    <ul>
-        <li>Logistic Regression: A basic classification model used for predicting churn status.</li>
-        <li>Decision Tree Classifier: A decision tree-based model used for more complex decision boundaries.</li>
-        <li>LightGBM Classifier: A gradient boosting model known for its efficiency and predictive power.</li>
-    </ul>
-</p>
+- **Summary Statistics**: Computed basic statistics such as mean, median, and standard deviation for numerical variables.
+- **Data Visualizations**: Created various visualizations such as histograms, box plots, and correlation matrices to better understand data distribution and relationships.
+- **Churn Analysis**: Analyzed churn rates in relation to different customer attributes to identify potential patterns and trends.
 
-<p>Hyperparameters and model configurations were fine-tuned to achieve the best performance.</p>
+## Model Building
 
-<h2>Model Evaluation</h2>
+We employed several machine learning models for churn prediction, including:
 
-<p>Model evaluation was conducted using various performance metrics such as:
-    <ul>
-        <li>Accuracy: Overall accuracy of the models in predicting churn.</li>
-        <li>Precision: The ability of the models to correctly predict positive churn cases.</li>
-        <li>Recall: The ability of the models to capture all actual positive churn cases.</li>
-        <li>F1-Score: A combination of precision and recall to measure the model's overall performance.</li>
-        <li>Confusion Matrices: Visualizations of model predictions versus actual churn status.</li>
-    </ul>
-</p>
+- **Logistic Regression**: A fundamental classification model used for predicting churn status.
+- **Decision Tree Classifier**: Employed for modeling more complex decision boundaries.
+- **LightGBM Classifier**: A gradient boosting model known for its efficiency and predictive power.
 
-<h2>Conclusion</h2>
+Hyperparameters and model configurations were fine-tuned to achieve the best performance.
 
-<p>In conclusion, the Telco Customer Churn Prediction project successfully explored, preprocessed, and built predictive models to identify customers at risk of churning. Key findings and feature importance were discussed, providing valuable insights for the business to take targeted actions to reduce churn rates. Further enhancements and model improvements can be considered for future work.</p>
+## Model Evaluation
 
-<h2>How to Use</h2>
+To assess model performance, we employed various metrics including:
 
-<p>To use the code and reproduce the results, follow these steps:
-    <ol>
-        <li>Clone the repository to your local machine.</li>
-        <li>Ensure you have the required Python libraries and dependencies installed (list provided below).</li>
-        <li>Execute the provided Python script for data preprocessing, model building, and evaluation.</li>
-        <li>Refer to the documentation within the code for more specific instructions and customization options.</li>
-    </ol>
-</p>
+- **Accuracy**: Measures the overall accuracy of the models in predicting churn.
+- **Precision**: Evaluates the models' ability to correctly predict positive churn cases.
+- **Recall**: Assesses the models' ability to capture all actual positive churn cases.
+- **F1-Score**: A combination of precision and recall to measure the model's overall performance.
+- **Confusion Matrices**: Visualizations of model predictions versus actual churn status.
 
-<h2>Dependencies</h2>
+## Conclusion
 
-<p>To run the code, you will need the following Python libraries and dependencies:
-    <ul>
-        <li>pandas</li>
-        <li>numpy</li>
-        <li>seaborn</li>
-        <li>matplotlib</li>
-        <li>scikit-learn</li>
-        <li>lightgbm</li>
-    </ul>
-</p>
+In conclusion, the Telco Customer Churn Prediction project successfully explored, preprocessed, and built predictive models to identify customers at risk of churning. Key findings and feature importance were discussed, providing valuable insights for the business to take targeted actions to reduce churn rates. Further enhancements and model improvements can be considered for future work.
 
-<h2>License</h2>
+## How to Use
 
-<p>This project is licensed under [License Name].</p>
+To replicate the results and use the code, follow these detailed steps:
 
-<h2>Author</h2>
+1. Clone the repository to your local machine using the following command:
+gh repo clone Geo-y20/Telco-Customer-Churn-
 
-<p>Author: [George Youhana]</p>
-</body>
-</html>
+2. Ensure you have the required Python libraries and dependencies installed by running:
+pip install pandas numpy seaborn matplotlib scikit-learn lightgbm
+
+3. Execute the provided Python script for data preprocessing, model building, and evaluation.
+
+4. Refer to the documentation within the code for more specific instructions and customization options.
+
+## Dependencies
+
+To run the code, you will need the following Python libraries and dependencies:
+
+- pandas
+- numpy
+- seaborn
+- matplotlib
+- scikit-learn
+- lightgbm
+
+## License
+
+This project is licensed under [MIT].
+
+## Author
+
+Author: [George Youhana]
